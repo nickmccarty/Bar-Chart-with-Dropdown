@@ -10,7 +10,8 @@ $('#first_cat').on('change',function(){
         },
         dataType:"json",
         success: function (data) {
-            Plotly.newPlot('bargraph', data );
+            var config = {responsive: true}
+            Plotly.newPlot('bargraph', data, config);
         }
     });
 })
